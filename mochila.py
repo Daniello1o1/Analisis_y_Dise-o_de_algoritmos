@@ -1,3 +1,5 @@
+import matplotlib.pyplot as pl
+import numpy as np
 import time, random
 def mochila_fraccionaria(capacidad, objetos):
     #Ordenar por valor/peso
@@ -34,4 +36,6 @@ if __name__ == '__main__':
     tiempos = []
     for i in range(0,100):
         taim()
-    print(tiempos)
+    x = np.linspace(0,2,100)
+    pl.plot(tiempos)
+    pl.show()
